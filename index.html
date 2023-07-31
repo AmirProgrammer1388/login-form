@@ -10,9 +10,11 @@
     <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
     <!-- JQuery -->
     <script src="Jquery.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="bg-dark p-5 container">
+<body class="p-5 container" style="  background-image: url(image/Purple-Abstract-Webpage-Background-Graphics-1.jpg) ;background-size: cover;"></body>>
     <div class="bg-info p-3 text-white rounded w-50 mx-auto step-1">
         <div>
             <div class="step11">
@@ -27,13 +29,11 @@
                 <form dir="ltr">
                     <div class="mb-3 mt-3" dir="rtl">
                         <label for="email" class="form-label">ایمیل:</label>
-                        <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد نمایید"
-                            name="email">
+                        <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد نمایید" name="email" style="text-align: center;">
                     </div>
                     <div class="mb-3" dir="rtl">
                         <label for="pwd" class="form-label">رمز:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="رمز خود را وارد نمایید"
-                            name="pswd">
+                        <input type="password" class="form-control" id="pwd" placeholder="رمز خود را وارد نمایید" name="pswd" style="text-align: center;">
                     </div>
                     <div class="form-check mb-3" dir="rtl">
                         <label class="form-check-label">
@@ -42,12 +42,15 @@
                         </label>
                     </div>
                     <div>
-                        <button type="submit" class="btn btn-primary">ثبت</button>
+                        <button type="submit" class="btn btn-success">ثبت</button>
                     </div>
                 </form>
                 <!-- فراموشی رمز -->
                 <div class="d-flex align-items-center justify-content-center">
                     <button class="btn btn-primary forgot">رمز خود را فراموش کردی؟</button>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="new-user" style="text-decoration: none;">ساخت حساب</a>
                 </div>
             </div>
         </div>
@@ -58,12 +61,12 @@
             <form method="post">
                 <div class="container">
                     <label for="uname"><b>نام کاربری</b></label>
-                    <input type="text" placeholder="نام کاربری" name="uname" required>
+                    <input type="text" placeholder="نام کاربری" class="form-control" name="uname" required>
 
                     <label for="email"><b>ایمیل</b></label>
-                    <input type="password" placeholder="ایمیل" name="psw" required>
+                    <input type="password" placeholder="ایمیل" class="form-control" name="psw" required>
 
-                    <button type="submit">بازیابی رمز</button>
+                    <button type="submit" class="rounded change-pas">بازیابی رمز</button>
                 </div>
 
                 <div class="container">
@@ -71,9 +74,38 @@
                 </div>
             </form>
         </div>
-
-        <div class="text-center">
-            <a href="#" class="" style="text-decoration: none;">ساخت حساب</a>
+        <div class="step13" style="display: none;">
+            <div class="fw-bold text-center ms-boder">
+                <h2>ثبت نام کاربر جدید</h2>
+            </div>
+            <form dir="ltr">
+                <div class="mb-3 mt-3" dir="rtl">
+                    <label for="email" class="form-label">ایمیل:</label>
+                    <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد نمایید" name="email" style="text-align: center;">
+                </div>
+                <div class="mb-3 mt-3" dir="rtl">
+                    <label for="email" class="form-label">نام کاربری:</label>
+                    <input type="email" class="form-control" id="email" placeholder="نام کاربری خود را وارد نمایید" name="email" style="text-align: center;">
+                </div>
+                <div class="mb-3" dir="rtl">
+                    <label for="pwd" class="form-label">رمز:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="رمز خود را وارد نمایید" name="pswd" style="text-align: center;">
+                </div>
+                <div class="mb-3" dir="rtl">
+                    <label for="pwd" class="form-label">تکرار رمز:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="رمز خود را مجدد وارد نمایید" name="pswd" style="text-align: center;">
+                </div>
+                <div class="form-check mb-3" dir="rtl">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember">
+                        <span>من را بخاطر بسپار</span>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-success my-2 sumbit-2">ثبت</button>
+                    <button class="btn btn-danger close-13 my-2 close-13">لغو</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="app.js"></script>
