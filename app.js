@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('.forgot').click(function(){
+        $('.step11').hide()
+        $('.step12').show()
+    })
+    $(".cancelbtn-h").click(function(){
+        $('.step11').show()
+        $('.step12').hide()
+    })
+})

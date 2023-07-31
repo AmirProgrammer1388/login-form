@@ -1,0 +1,82 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script src="Jquery.js"></script>
+</head>
+
+<body class="bg-dark p-5 container">
+    <div class="bg-info p-3 text-white rounded w-50 mx-auto step-1">
+        <div>
+            <div class="step11">
+                <div class="fw-bold text-center ms-boder">
+                    <h2>به سایت
+                        <span class="text-danger">
+                            دانش نوین
+                        </span>
+                        خوش آمدید
+                    </h2>
+                </div>
+                <form dir="ltr">
+                    <div class="mb-3 mt-3" dir="rtl">
+                        <label for="email" class="form-label">ایمیل:</label>
+                        <input type="email" class="form-control" id="email" placeholder="ایمیل خود را وارد نمایید"
+                            name="email">
+                    </div>
+                    <div class="mb-3" dir="rtl">
+                        <label for="pwd" class="form-label">رمز:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="رمز خود را وارد نمایید"
+                            name="pswd">
+                    </div>
+                    <div class="form-check mb-3" dir="rtl">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember">
+                            <span>من را بخاطر بسپار</span>
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">ثبت</button>
+                    </div>
+                </form>
+                <!-- فراموشی رمز -->
+                <div class="d-flex align-items-center justify-content-center">
+                    <button class="btn btn-primary forgot">رمز خود را فراموش کردی؟</button>
+                </div>
+            </div>
+        </div>
+        <div class="step12" style="display: none;">
+            <div class="fw-bold text-center ms-boder">
+                <h2>بازیابی رمز</h2>
+            </div>
+            <form method="post">
+                <div class="container">
+                    <label for="uname"><b>نام کاربری</b></label>
+                    <input type="text" placeholder="نام کاربری" name="uname" required>
+
+                    <label for="email"><b>ایمیل</b></label>
+                    <input type="password" placeholder="ایمیل" name="psw" required>
+
+                    <button type="submit">بازیابی رمز</button>
+                </div>
+
+                <div class="container">
+                    <button type="button" class="cancelbtn-h btn btn-danger">لغو</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="text-center">
+            <a href="#" class="" style="text-decoration: none;">ساخت حساب</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
